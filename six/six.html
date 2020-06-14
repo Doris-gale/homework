@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第六次作业</title>
+	<style>
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	 text-align:center
+}
+.clear {
+	content:" ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.header {
+	width:1200px;
+    height:100px;
+    background:rgba(255,255,255,1);
+    margin:0 auto;
+}
+.banner {
+width:1200px;
+height:420px;
+background:rgba(33,9,77,1);
+margin:0 auto;
+}
+.search {
+	width:30%;
+	margin:100px auto;
+	display:flex;
+}
+.search input {
+	float:right;
+	flex:4;
+	height:30px;
+	outline:none;
+	border:1px solid #45A3FF;
+	box-sizing:border-box;
+	padding-left:100px;
+}
+.search button {
+	        float: right;
+            flex: 1;
+            height: 30px;
+            background-color:#45A3FF;
+            color: white;
+            border-style: none;
+            outline: none;
+}
+.search button i{
+            font-style: normal;
+        }
+        .search button:hover{
+            font-size: 16px;
+        }
+.list {
+   display:block;
+   float:left;
+   font-size:24px;
+   list-style-type:none;
+   width:148px;
+   height:24px;
+   padding-top:30px;
+   padding-left:30px;
+   line-height:27px;
+}  
+.list a {
+	display:block;
+	width:148px;
+	height:30px;
+    line-height:30px;
+    margin-top:10px;
+    font-size:24px;
+    color:#A4A4A4;
+    border-right:solid 2px #45A3FF;
+    border-left:solid 2px #45A3FF;
+    text-decoration:none;
+} 
+a.lianjie:hover {
+	display:block;
+	color:#45A3FF;
+	border-bottom:solid 2px #45A3FF;
+	padding-bottom:10px;
+	border-top:solid 2px #45A3FF;
+	padding-top:10px;
+}
+.nav {
+	width:1100px;
+	height:24px;
+	padding:0px 50px 0px 50px;
+}
+.logo {
+	float:left;
+    width:100px;
+    height:100px;
+}
+.middle {
+	width:1200px;
+    height:200px;
+    background:rgba(226,236,255,1);
+    margin:0 auto;
+}
+.picture {
+	width:1000px;
+    height:100px;
+    background:rgba(133,172,244,1);
+    opacity:0.43;
+    border-radius:30px;
+    margin:0 auto;
+}
+.list2 {
+	display:block;
+	float:left;
+	width:60px;
+	height:60px;
+	padding-top:10px;
+	padding-left:150px;
+}
+.long {
+	display:block;
+	float:left;
+	list-style-type:none;
+	font-size:15px;
+	color:white
+ 	padding-top:70px;
+ 	padding-left:120px;
+}
+.longer {
+	display:block;
+	float:left;
+	list-style-type:none;
+	font-size:15px;
+	color:white
+ 	padding-top:70px;
+ 	padding-left:90px;
+}
+.short {
+	display:block;
+	float:left;
+	list-style-type:none;
+	font-size:15px;
+	color:white
+ 	padding-top:70px;
+ 	padding-left:150px;
+}
+.text a {
+	color:white;
+	text-decoration:none;
+}
+a.lianjie2:hover {
+	display:block;
+	color:#21094D;
+	border-bottom:solid 2px #21094D;
+	padding-bottom:10px;
+}
+.text2 {
+width:1200px;
+height:36px;
+font-size:45px;
+font-family:SourceHanSansCN;
+font-weight:800;
+color:rgba(164,164,164,1);
+line-height:34px;
+padding-top:30px;
+}
+.message {
+	width:300px;
+	height:50px;
+	border-top:solid 3px #6A93DF;
+	border-bottom:solid 3px #6A93DF;
+	border-left:dashed 3px #6A93DF;
+	border-right:dashed 3px #6A93DF;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.message p {
+font-size:18px;
+font-family:SourceHanSansCN;
+font-weight:bold;
+color:rgba(164,164,164,1);
+line-height:17px;
+}
+.content1 {
+	display:block;
+    width:600px;
+    height:300px;
+    float:left;
+    padding-top:10px;
+    padding-left:90px;  
+}
+.content>div.content1 {
+	width:600px;
+	height:300px;
+	position:relative;
+}
+.new {
+	width:560px;
+	height:70px;
+	background-color: rgba(0, 0, 0, 0.3);	
+	font-size: 30px;
+	font-family:SourceHanSansCN;				
+	position: absolute;				
+	left: 0px;				
+	top:285px;
+	margin-left:110px;
+	color:white;
+}
+.content1 span {
+	padding-top:30px;
+}
+.content2 {
+display:block;
+width:600px;
+height:300px;
+float:left;
+padding-top:10px;
+padding-left:10px;
+ font-size:13px;
+font-family:SourceHanSansCN;
+}
+.kongbai {
+	width:1200px;
+	height:320px;
+}
+
+.content>div.content3 {
+	width: 400px;	
+	height: 400px;							
+	position: relative;	
+	padding-left:90px;				
+}	
+.teacher {
+	width:400px;
+    border-radius:4px;
+	height:400px;
+}				
+.teacher_cover {				
+		width: 400px;				
+		height: 180px;				
+		line-height: 35px;				
+		margin-left: 90px;			
+		background-color: rgba(0, 0, 0, 0.3);		
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+.shifan {
+    margin:0 auto;
+    font-size:35px;
+    color:#3A79ED;
+    margin-bottom:10px;
+		}
+.HEBNU{
+	width:800px;
+	height:400px;
+	font-size:17px;	
+	color:#A4A4A4;
+	position:absolute;
+	left:500px;
+	top:0;
+}
+.content>div.content4 {
+	width: 400px;	
+	height: 400px;							
+	position: relative;	
+	padding-left:90px;				
+}	
+.doctor {
+	width:400px;
+    border-radius:4px;
+	height:400px;
+}				
+.doctor_cover {				
+		width: 400px;				
+		height: 180px;				
+		line-height: 35px;				
+		margin-left: 90px;			
+		background-color: rgba(0, 0, 0, 0.3);		
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+.yike {
+    margin:0 auto;
+    font-size:35px;
+    color:#3A79ED;
+    margin-bottom:10px;
+		}
+.HEBMU{
+	width:800px;
+	height:400px;
+	font-size:17px;	
+	color:#A4A4A4;
+	position:absolute;
+	left:500px;
+	top:0;
+}
+.more {
+	margin:0 auto;
+    font-size:35px;
+    color:#3A79ED;
+    margin-bottom:10px;
+}
+.footer {
+	width:1200px;
+	height:380px;
+	margin:0 auto;
+	background-color: #21094D;
+	margin-top:320px;
+}
+.us {
+	width:200px;
+	height:380px;
+	display:block;
+	float:left;
+	padding-left:50px;
+	line-height:50px;
+}
+.us p {
+	font-size:30px;
+	color:#E2ECFF;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.list3 {
+	list-style-type:none;
+	color:white;
+	font-size:17px;
+}
+
+.question{
+	width:200px;
+	height:380px;
+	display:block;
+	float:left;
+	padding-left:50px;
+	line-height:50px;
+}
+.question p {
+	font-size:30px;
+	color:#E2ECFF;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.list3 {
+	list-style-type:none;
+	color:white;
+	font-size:17px;
+}
+.pht {
+	width:200px;
+	height:380px;
+	display:block;
+	float:left;
+	padding-left:100px;
+}
+.content5 {
+width:1200px;
+height:300px;
+}
+.content>div.more1 {
+	width: 285px;	
+	height: 300px;							
+	position: relative;	
+	padding-left:90px;	
+	display:block;
+	float:left;				
+}	
+.YS {
+	width:285px;
+    border-radius:4px;
+	height:300px;
+}				
+.YS_cover {				
+		width: 285px;				
+		height: 80px;				
+		line-height: 35px;				
+		margin-left: 90px;			
+		background-color: rgba(0, 0, 0, 0.3);		
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+.content>div.more2 {
+	width: 285px;	
+	height: 300px;							
+	position: relative;	
+	padding-left:30px;
+	display:block;	
+	float:left;		
+}	
+.HB {
+	width:285px;
+    border-radius:4px;
+	height:300px;
+}				
+.HB_cover {				
+		width: 285px;				
+		height: 80px;				
+		line-height: 35px;				
+		margin-left: 30px;			
+		background-color: rgba(0, 0, 0, 0.3);	
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+.content>div.more3 {
+	width: 285px;	
+	height: 300px;							
+	position: relative;	
+	padding-left:30px;
+	display:block;	
+	float:left;		
+}	
+.NY {
+	width:285px;
+    border-radius:4px;
+	height:300px;
+}				
+.NY_cover {				
+		width: 285px;				
+		height: 80px;				
+		line-height: 35px;				
+		margin-left: 30px;			
+		background-color: rgba(0, 0, 0, 0.3);	
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+.content>div.more4 {
+	width: 285px;	
+	height: 300px;							
+	position: relative;	
+	padding-left:30px;
+	display:block;	
+	float:left;		
+}	
+.KJ {
+	width:285px;
+    border-radius:4px;
+	height:300px;
+}				
+.KJ_cover {				
+		width: 285px;				
+		height: 80px;				
+		line-height: 35px;				
+		margin-left: 30px;			
+		background-color: rgba(0, 0, 0, 0.3);	
+		color: #E2ECFF;				
+		font-size: 15px;				
+		position: absolute;				
+		left: 0px;				
+		top: 220px;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="logo.png" width="100" weight="100">
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="list"><a class="lianjie" href="#">首页</a></li>
+				<li class="list"><a class="lianjie" href="#">高校介绍</a></li>
+				<li class="list"><a class="lianjie" href="#">普通高考</a></li>
+				<li class="list"><a class="lianjie" href="#">成人高考</a></li>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="banner" >
+<img src="高考延期.png" width="1000" height="420">
+	</div>
+<div class="middle">
+        <div class="picture">
+        	<img class="list2" src="专业选择.png">
+        	<img class="list2" src="省内高校.png">
+        	<img class="list2" src="普通高考信息服务.png">
+        	<img class="list2" src="成人高考信息服务.png">
+        <div class="text">
+        	<ul>
+        		<li class="short"><a class="lianjie2" href="#">专业选择</a></li>
+        		<li class="short"><a class="lianjie2" href="#">省内高校</a></li>
+        		<li class="long"><a class="lianjie2" href="#">普通高考信息服务</a></li>
+        		<li class="longer"><a class="lianjie2" href="#">成人高考信息服务</a></li>
+        </ul>
+    </div>
+        </div>
+        <div class="text2">
+        	<p>公平&nbsp;&nbsp;EQUITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公正&nbsp;&nbsp;JUSTICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公开&nbsp;&nbsp;PUBLICITY</p>
+        </div>
+        </div>
+<div class="content">
+	<div class="message">
+		<p>河北省国家教育考试信息专栏</br>Hebei Province national Education Examination column
+</p>
+	</div>
+     <div class="content1">
+     	<img src="高考.jpeg">
+     	<span class="new">最新通知</span>
+     </div>
+     	<div class="content2">
+     		<p>&nbsp;&nbsp;为切实做好2020年河北省普通高校招生考试工作，满足考生临考前居民身份证有效期满、证件损坏、丢失等急需办证、用证的迫切需求，6月12日，河北省公安厅治安警察总队下发《关于开启2020年高考学生加急办证“绿色通道”的通知》，要求全省各级公安户政部门、办证大厅和户籍派出所办证窗口，开展为考生学生加急办证工作。2020年6月16日至7月6日高考前，全省各级公安机关居民身份证办理窗口，凭省教育考试院统一式样的《普通高考考生居民身份证加急办理证明》，为参加2020年高考的学生加急办理身份证。</br>&nbsp;&nbsp;通知强调，今年高考面临特殊的国际国内形势，党中央、国务院高度重视今年高考工作，全省各级公安户政部门要切实把思想和行动统一到习近平同志为核心的党中央决策部署上来，与教育等部门通力合作，认真落实各项工作措施，努力做好服务保障工作，为考生创造安全稳定的考试环境。要深刻认识今年高考工作的严峻性、复杂性，强化风险意识，务求把各项工作做深做细做扎实。从现在起至高考结束，全省各级户政办证大厅和派出所办证窗口要调整警力安排，全力投入到服务高考考生办证工作中。对考生加急证优先受理、优先审核、优先上传，不受节假日限制，及时高效完成办证工作，确保考生正常参加高考。</br>&nbsp;&nbsp;通知明确，根据疫情防控要求，经与省邮政速递公司协商，今年考生办理的“绿色通道”加急身份证一律采用邮政快递方式送达本人。考生凭证明信就近任选一受理点办证。各级办证窗口要认真做好考生加急身份证件受理、审核、上传工作。受理信息第1个工作日审核上传，第二个工作日完成证件制作，各设区市市政府所在地城市市区自受理之日起3个工作日送达，其他地区5个工作日送达。</br>&nbsp;&nbsp;通知要求，各级公安户政部门和派出所要主动联系教育部门，了解辖区考点设置情况，安排附近派出所设立临时服务点，为开考前丢失、损坏证件的考生开具临时身份证明提供应急服务。有条件的派出所要组织民警携带移动警务设备深入考场服务点，为考生提供现场身份核实、开具临时身份证明服务，保证考生及时参加高考。</p>
+     </div>
+     <div class="kongbai">
+     </div>
+     <div class="search">
+			<input type="text" placeholder="请输入..." name=" " id=" " value=" "/>
+			<button><i>搜索</i></button>
+		</div>
+		<div class="shifan">
+		河北师范大学（Hebei Normal University）
+	</div>
+	<div class="content3">
+		<img class="teacher" src="河北师范大学.jpg">
+		<span class="teacher_cover">中文名:河北师范大学</br> 外文名:Hebei Normal University</br> 简称:河北师大（HEBNU） </br>
+		知名校友:栗战书，龙庄伟，李树深，贺泓，才利民，司徒兰芳，张志伟，宋仁堂等 </span>
+		<p class="HEBNU">
+		&nbsp;&nbsp;河北师范大学位于河北省会石家庄市，由中华人民共和国教育部与河北省人民政府共建，是一所具有百年历史和光荣传统的省属重点大学，河北省重点支持的国家一流大学建设一层次高校，是中国较早成立、规模较大的高等师范院校之一，入选卓越教师培养计划、中西部高校基础能力建设工程、国家建设高水平大学公派研究生项目、国家“特色重点学科项目”建设高校、新工科研究与实践项目、国家级大学生创新创业训练计划、全国深化创新创业教育改革示范高校、教育部来华留学示范基地建设高校。</br>
+&nbsp;&nbsp;河北师大最早起源于1902年创建于北京的顺天府学堂和1906年创建于天津的北洋女师范学堂。1996年6月，原河北师范大学、河北师范学院与创建于1952年的河北教育学院、创建于1984年的河北职业技术师范学院合并，组建成新的河北师范大学。2011年9月，原各校区迁至现址实现集中办学。2014年11月，河北省人民政府、教育部决定共建河北师范大学。</br>
+&nbsp;&nbsp;截至2020年4月，学校新校区占地1829亩，馆藏图书303万册，中外文数据库67个；设25个专业学院，1个独立学院（汇华学院），有博士学位授权一级学科11个，博士专业学位授权点1个；硕士学位授权一级学科29个，硕士专业学位授权点14个；博士后科研流动站9个，本科专业95个；有在职教职工2598人，在校本科生24303人，硕士研究生4837人，博士研究生366人，成人教育学生10592人。化学学科、植物学与动物学学科进入ESI世界排名前1%。
+		</p>
+	</div>
+	<div class="yike">
+		河北医科大学（Hebei Medical University）
+	</div>
+	<div class="content4">
+		<img class="doctor" src="河北医科大学.jpg">
+		<span class="doctor_cover">
+		中文名:河北医科大学 </br>外文名:Hebei Medical University</br> 简称:河北医大（HEBMU）</br> 类型:医药</br> 
+属性:省属高等院校 、省部共建大学</span>
+<p class="HEBMU">
+	&nbsp;&nbsp;河北医科大学位于河北省省会石家庄市，由河北省人民政府、国家卫生和计划生育委员会和教育部三方共建，入选国家“中西部高校基础能力建设工程”、“卓越医生教育培养计划”、”国家建设高水平大学公派研究生项目“、国家“特色重点学科项目”建设高校，是河北省重点骨干大学，北京卓越医学人才培养高校联盟牵头单位；现已成为集教学、科研、医疗为一体的综合性医科大学。</br>
+&nbsp;&nbsp;学校初名北洋医学堂，1894年由直隶总督北洋大臣李鸿章于天津创办，是中国近代第一所官办西医院校。辛亥革命后，1913年北洋医学堂更名直隶公立医学专门学校，并开始招收本科学生。1915年学校迁至保定。1937年7月7日抗日战争全面爆发，学校被迫停办。1946年1月复校招生。1949年4月更名为河北医学院。1958年学校由保定迁至石家庄。1995年，原河北医学院、河北中医学院、石家庄医学高等专科学校三校合并，改称河北医科大学。2013年河北中医学院恢复独立建制。</br>
+&nbsp;&nbsp;截至2019年12月，学校占地面积22.39万平方米，建筑面积36.12万平方米；全校系统共有教职工15000余人（含直属附属医院）；学校有两个校区、五所直属附属医院，下设18个二级学院，25个本科专业；全日制在校生15790人，其中博士生、硕士生3709人，留学生427人。神经科学与行为科学、药理学与毒理学、临床医学3个学科进入ESI全球排名前1%。</p>
+	</div>
+	<div class="more">
+	更多河北省热门高校信息(More Information)
+</div>
+	<div class="more1">
+<img class="YS" src="燕山大学.jpg">
+<span class="YS_cover">知名校友:周铁农、张春贤、丁薛祥、黄庆学、吴生富等</span>
+	</div>
+<div class="more2">
+<img class="HB" src="河北大学.jpg">
+<span class="HB_cover">知名校友
+	知名校友:韩占文、庞国芳、刘峰岩、云剑、白燕升等</span>
+	</div>
+<div class="more3">
+<img class="NY" src="河北农业大学.jpg">
+<span class="NY_cover">知名校友
+	知名校友:
+赵金铎、柳宝全、刘旭、董玉琛、杨志峰、赵春江、郭子建、魏立华、石嫣等 </span>
+	</div>
+	<div class="more4">
+<img class="KJ" src="河北科技大学.jpg">
+<span class="KJ_cover">知名校友
+	知名校友:韩布兴、蒋一苇等</span>
+	</div>
+	</div>
+<div class="footer">
+	<div class="us">
+	<p>关于我们</p>
+	<ul>
+		<li class="list3">办公地址:XXXX</li>
+		<li class="list3">邮编:05XXXX</li>
+		<li class="list3">版权所有:XXXX</li>
+		<li class="list3">E_mail:XXXX</li>
+	</ul>
+</div>
+	<div class="question">
+		<p>常见问题</p>
+		<ul>
+			<li class="list3">招生考试日期</li>
+			<li class="list3">办事指南</li>
+			<li class="list3">机构设置</li>
+			<li class="list3">院校直通车</li>
+		</ul>
+	</div>
+<div class="pht">
+	<img src="高考必胜.jpeg">
+	</div>
+	</div>
+</body>
+</html>
